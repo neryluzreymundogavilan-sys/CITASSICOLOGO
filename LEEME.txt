@@ -1,0 +1,13 @@
+# PsicoScorza — versión para GitHub Pages
+
+## Publicar
+1. Crea un repositorio en GitHub.
+2. Sube directamente a la raíz del repositorio estos archivos: `index.html`, `app.js` y `.nojekyll`.
+3. Entra en **Settings → Pages**.
+4. En **Build and deployment**, selecciona **Deploy from a branch**, rama `main` y carpeta `/(root)`. Guarda.
+5. Espera a que GitHub Pages publique la página y abre la URL que aparece en esa sección.
+
+## Importante
+Esta carpeta contiene solo el frontend estático para que la página se vea en GitHub Pages. GitHub Pages no ejecuta Node.js ni MySQL: el inicio de sesión, registro y datos guardados usan el modo local del navegador (`localStorage`) cuando la API no está disponible. Es una demostración, no un sistema clínico listo para manejar datos reales. No publiques información personal o clínica real. Para habilitar el backend real, debe alojarse por separado en un servicio compatible con Node.js y conectarse a una base de datos segura; luego se debe configurar la URL de la API.
+
+El archivo original incluía backend, dependencias instaladas y configuración local; no se incluyen aquí porque no se ejecutan en GitHub Pages.
